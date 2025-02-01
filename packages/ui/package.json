@@ -40,7 +40,7 @@
   "peerDependencies": {
     "react": "^18 | ^19",
     "react-dom": "^18 | ^19",
-    "react-hook-form": "^7.53.2"
+    "react-hook-form": "^7.54.2"
   },
   "dependencies": {
     "@floating-ui/react": "^0.26.16",
@@ -77,7 +77,7 @@
     "prop-types": "^15.8.1",
     "react": "19.0.0",
     "react-dom": "19.0.0",
-    "react-hook-form": "^7.53.2",
+    "react-hook-form": "^7.54.2",
     "rollup-plugin-node-builtins": "^2.1.2",
     "storybook": "^8.4.7",
     "tailwindcss": "^3.4.14",
