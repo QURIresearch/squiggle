@@ -26,6 +26,7 @@ const exampleSets = [
     3.33221889e-85,
     1.19359728e-131,
     -9.999999999999927,
+    -9.999999,
     4.51576558e-139,
     1.50278463e-105,
     9.999999999999998,
@@ -54,7 +55,7 @@ const exampleSets = [
 const block = (samples: number[], outputLength: number) => {
   const params = {
     samples: samples.sort((a, b) => a - b),
-    outputLength: outputLength,
+    outputLength,
     weight: 1,
     kernelWidth: 1,
   };

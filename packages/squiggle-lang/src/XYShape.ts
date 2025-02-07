@@ -482,6 +482,16 @@ export const PointwiseCombination = {
     const t2n = t2.xs.length;
     const outX: number[] = [];
     const outY: number[] = [];
+
+    // The loop below would fail if we don't have any points in one of the shapes.
+    if (!t1n) {
+      return Result.Ok(t2);
+    }
+
+    if (!t2n) {
+      return Result.Ok(t1);
+    }
+
     // Next index that we want to consume.
     // Possible range of values: [0..n+2], where:
     // - `n` signifies "we consumed all points"
