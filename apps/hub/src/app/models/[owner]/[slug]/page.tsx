@@ -34,7 +34,7 @@ async function InnerPage({ params }: Props) {
 const Loading = () => {
   return (
     <div className="flex h-screen">
-      <div className="flex-1 border-r p-1">
+      <div className="flex-1 border-r border-gray-200 p-1">
         <Skeleton className="h-full" />
       </div>
       <div className="flex-1 p-1">

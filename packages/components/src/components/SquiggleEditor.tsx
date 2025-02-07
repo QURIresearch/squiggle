@@ -60,7 +60,7 @@ export const SquiggleEditor: FC<SquiggleEditorProps> = ({
   return (
     <div>
       <div
-        className="rounded-sm border border-slate-300 bg-slate-50 p-2"
+        className="rounded-xs border border-slate-300 bg-slate-50 p-2"
         data-testid="squiggle-editor"
       >
         <CodeEditor

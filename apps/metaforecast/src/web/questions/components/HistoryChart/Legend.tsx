@@ -1,6 +1,5 @@
-import { useRef, useState } from "react";
-
 import { shift, useFloating } from "@floating-ui/react-dom";
+import { useRef, useState } from "react";
 
 type Item = {
   name: string;
@@ -50,7 +49,7 @@ const LegendItem: React.FC<{ item: Item; onHighlight: () => void }> = ({
         ? (() => {
             return (
               <div
-                className={`absolute rounded border border-gray-300 bg-white p-2 text-xs ${
+                className={`absolute rounded-sm border border-gray-300 bg-white p-2 text-xs ${
                   showTooltip ? "" : "hidden"
                 }`}
                 ref={floating}

@@ -19,7 +19,7 @@ export const QueryForm: FC<Props> = ({
   return (
     <form onSubmit={(e) => e.preventDefault()} className="w-full">
       <input
-        className="focus:shadow-outline w-full rounded-md border-gray-300 text-gray-700 focus:outline-none"
+        className="focus:shadow-outline focus:outline-hidden w-full rounded-md border-gray-300 text-gray-700"
         autoFocus
         type="text"
         defaultValue={defaultValue}

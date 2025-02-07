@@ -71,7 +71,7 @@ export const MarkdownViewer: React.FC<MarkdownViewerProps> = ({
             return (
               <code
                 {...rest}
-                className="not-prose break-words rounded-sm border border-black border-opacity-[0.04] bg-black bg-opacity-[0.03] px-1 py-0.5 font-mono text-[.9em]"
+                className="not-prose border-black/4 bg-black/3 rounded-xs break-words border px-1 py-0.5 font-mono text-[.9em]"
               >
                 {children}
               </code>
@@ -109,7 +109,7 @@ export const MarkdownViewer: React.FC<MarkdownViewerProps> = ({
           return (
             <div
               className={clsx(
-                "not-prose my-6 overflow-hidden rounded p-4 text-[10.7px] [&_pre]:!overflow-x-auto",
+                "not-prose my-6 overflow-hidden rounded-sm p-4 text-[10.7px] [&_pre]:!overflow-x-auto",
                 backgroundColor
               )}
             >

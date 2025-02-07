@@ -228,7 +228,7 @@ export const ListView: FC = () => {
 
         <input
           type="text"
-          className="mb-4 rounded border border-gray-200 p-1"
+          className="mb-4 rounded-sm border border-gray-200 p-1"
           defaultValue={search}
           placeholder="Filter..."
           onChange={(e) => setSearch(e.currentTarget.value)}
@@ -245,7 +245,7 @@ export const ListView: FC = () => {
 
         {sidebarItems && (
           <div className="relative w-[500px]">
-            <div className="sticky top-4 ml-4 rounded-sm border border-gray-200 bg-slate-50 px-2 py-4">
+            <div className="rounded-xs sticky top-4 ml-4 border border-gray-200 bg-slate-50 px-2 py-4">
               <ItemSideBar
                 model={model}
                 variableName={model.variableName}

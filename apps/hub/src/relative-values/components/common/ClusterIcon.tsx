@@ -6,7 +6,7 @@ export const ClusterIcon: FC<{
 }> = ({ cluster, selected = true }) => {
   return (
     <div
-      className="h-2 w-2 rounded-sm"
+      className="rounded-xs h-2 w-2"
       style={
         selected
           ? { backgroundColor: cluster.color }

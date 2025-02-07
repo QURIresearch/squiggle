@@ -5,7 +5,7 @@ import { truncateStr } from "./utils.js";
 
 widgetRegistry.register("String", {
   Preview: (value) => (
-    <div className="overflow-hidden overflow-ellipsis italic text-slate-400">
+    <div className="overflow-hidden text-ellipsis italic text-slate-400">
       {truncateStr(value.value, SHORT_STRING_LENGTH)}
     </div>
   ),

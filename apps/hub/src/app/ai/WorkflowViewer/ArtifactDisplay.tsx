@@ -55,7 +55,7 @@ export const ArtifactDisplay: FC<{
   return (
     <Tooltip
       render={() => (
-        <div className="max-h-80 max-w-md overflow-y-auto rounded border bg-white px-3 py-2 text-xs shadow-lg">
+        <div className="max-h-80 max-w-md overflow-y-auto rounded-sm border border-gray-200 bg-white px-3 py-2 text-xs shadow-lg">
           <div className="mb-2 text-lg font-bold text-slate-700">{name}</div>
           {isCodeOrSource ? (
             <pre className="whitespace-pre-wrap">{artifact.value}</pre>

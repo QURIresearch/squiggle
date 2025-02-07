@@ -41,7 +41,7 @@ export const ToolbarItem: FC<Props> = ({
         <Icon
           className={clsx(
             iconSize,
-            "flex-shrink-0 text-slate-400",
+            "shrink-0 text-slate-400",
             iconClasses,
             iconSpin && "animate-spin"
           )}

@@ -4,7 +4,7 @@ import { FC } from "react";
 import { getGlobalStatistics } from "@/lib/server/globalStatistics";
 
 const StatRow: FC<{ name: string; value: number }> = ({ name, value }) => (
-  <tr className="border">
+  <tr className="border border-gray-200">
     <td className="p-4 font-bold">{name}</td>
     <td className="p-4">{value}</td>
   </tr>

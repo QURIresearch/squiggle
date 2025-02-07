@@ -6,6 +6,7 @@ import { type SqLinker as SqLinkerV1 } from "squiggle-lang-0.9.5";
 
 import { type SqLinker as SqLinkerDev } from "@quri/squiggle-lang";
 
+import { makeTw3Proxy } from "./Tw3Proxy.js";
 import { SquiggleLangPackageTypes } from "./versionedSquiggleLang.js";
 import { SquiggleVersion } from "./versions.js";
 
@@ -51,6 +52,16 @@ type GetImportType<T extends Record<string, unknown>> = PatchSqTypes<
   Awaited<T>
 >;
 
+function wrapWithTw3Proxy<T>(lib: T): T {
+  return {
+    ...lib,
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    SquigglePlayground: makeTw3Proxy((lib as any).SquigglePlayground),
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    SquiggleChart: makeTw3Proxy((lib as any).SquiggleChart),
+  } as T;
+}
+
 // Auto-generated, don't touch.
 export type SquiggleComponentsPackageTypes = {
   "0.8.5": GetImportType<typeof import("squiggle-components-0.8.5")>;
@@ -70,37 +81,53 @@ export async function squiggleComponentsByVersion<T extends SquiggleVersion>(
   // Enumerating all imports is necessary; `await import(version)` won't be enough.
   switch (version) {
     case "0.8.5":
-      return (await import(
-        "squiggle-components-0.8.5"
-      )) as unknown as SquiggleComponentsPackageTypes[T];
+      return wrapWithTw3Proxy(
+        (await import(
+          "squiggle-components-0.8.5"
+        )) as unknown as SquiggleComponentsPackageTypes[T]
+      );
     case "0.8.6":
-      return (await import(
-        "squiggle-components-0.8.6"
-      )) as unknown as SquiggleComponentsPackageTypes[T];
+      return wrapWithTw3Proxy(
+        (await import(
+          "squiggle-components-0.8.6"
+        )) as unknown as SquiggleComponentsPackageTypes[T]
+      );
     case "0.9.0":
-      return (await import(
-        "squiggle-components-0.9.0"
-      )) as unknown as SquiggleComponentsPackageTypes[T];
+      return wrapWithTw3Proxy(
+        (await import(
+          "squiggle-components-0.9.0"
+        )) as unknown as SquiggleComponentsPackageTypes[T]
+      );
     case "0.9.2":
-      return (await import(
-        "squiggle-components-0.9.2"
-      )) as unknown as SquiggleComponentsPackageTypes[T];
+      return wrapWithTw3Proxy(
+        (await import(
+          "squiggle-components-0.9.2"
+        )) as unknown as SquiggleComponentsPackageTypes[T]
+      );
     case "0.9.3":
-      return (await import(
-        "squiggle-components-0.9.3"
-      )) as unknown as SquiggleComponentsPackageTypes[T];
+      return wrapWithTw3Proxy(
+        (await import(
+          "squiggle-components-0.9.3"
+        )) as unknown as SquiggleComponentsPackageTypes[T]
+      );
     case "0.9.4":
-      return (await import(
-        "squiggle-components-0.9.4"
-      )) as unknown as SquiggleComponentsPackageTypes[T];
+      return wrapWithTw3Proxy(
+        (await import(
+          "squiggle-components-0.9.4"
+        )) as unknown as SquiggleComponentsPackageTypes[T]
+      );
     case "0.9.5":
-      return (await import(
-        "squiggle-components-0.9.5"
-      )) as unknown as SquiggleComponentsPackageTypes[T];
+      return wrapWithTw3Proxy(
+        (await import(
+          "squiggle-components-0.9.5"
+        )) as unknown as SquiggleComponentsPackageTypes[T]
+      );
     case "0.10.0":
-      return (await import(
-        "squiggle-components-0.10.0"
-      )) as unknown as SquiggleComponentsPackageTypes[T];
+      return wrapWithTw3Proxy(
+        (await import(
+          "squiggle-components-0.10.0"
+        )) as unknown as SquiggleComponentsPackageTypes[T]
+      );
     case "dev":
       return (await import(
         "@quri/squiggle-components"

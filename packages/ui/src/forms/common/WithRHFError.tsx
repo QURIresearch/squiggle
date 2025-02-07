@@ -38,7 +38,7 @@ export function WithRHFError<
           style={floatingStyles}
           onClick={() => clearErrors(name)}
         >
-          <div className="flex items-center gap-1 rounded bg-red-700 fill-red-700 py-2 pl-3 pr-4 shadow-md">
+          <div className="flex items-center gap-1 rounded-sm bg-red-700 fill-red-700 py-2 pl-3 pr-4 shadow-md">
             <div
               className={clsx(
                 "absolute left-3 h-2 w-2 rotate-45 bg-red-700",

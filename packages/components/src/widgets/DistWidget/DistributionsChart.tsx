@@ -431,7 +431,7 @@ const InnerDistributionsChart: FC<{
         discreteTooltip ? (
           <div
             className={clsx(
-              "grid gap-x-2 rounded border border-gray-300 bg-white p-2 text-xs"
+              "grid gap-x-2 rounded-sm border border-gray-300 bg-white p-2 text-xs"
             )}
             style={{
               gridTemplateColumns: "min-content min-content",

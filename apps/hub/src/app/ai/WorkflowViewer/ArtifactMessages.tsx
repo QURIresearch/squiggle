@@ -8,7 +8,7 @@ const Message: FC<{ message: ClientMessage }> = ({ message }) => {
   return (
     <div
       className={clsx(
-        "rounded-lg p-3 shadow-sm",
+        "shadow-xs rounded-lg p-3",
         isUser ? "bg-blue-50" : "bg-green-50"
       )}
     >

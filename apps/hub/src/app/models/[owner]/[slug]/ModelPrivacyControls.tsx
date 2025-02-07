@@ -42,7 +42,7 @@ export const ModelPrivacyControls: FC<{
     // TODO: copy-pasted from CacheMenu from relative-values, extract to <InvisibleMaybeDropdown> or something
     <div
       className={clsx(
-        "flex items-center rounded-sm px-2 py-1 text-sm text-gray-500",
+        "rounded-xs flex items-center px-2 py-1 text-sm text-gray-500",
         isEditable && "cursor-pointer hover:bg-slate-200"
       )}
     >

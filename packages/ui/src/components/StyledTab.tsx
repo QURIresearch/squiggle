@@ -40,7 +40,7 @@ type StyledTabType = FC<StyledTabProps> & {
 };
 
 const tabStyle =
-  "group flex flex-1 rounded-md focus:outline-none focus-visible:ring-offset-gray-100 hover:bg-gray-300 mx-px cursor-pointer";
+  "group flex flex-1 rounded-md focus:outline-hidden focus-visible:ring-offset-gray-100 hover:bg-gray-300 mx-px cursor-pointer";
 
 const StyledTabInner: FC<StyledTabButtonType> = ({
   name,
@@ -54,10 +54,9 @@ const StyledTabInner: FC<StyledTabButtonType> = ({
       className={clsx(
         "flex flex-1 items-center justify-center rounded-md p-1 pl-2.5 pr-2.5 text-sm font-medium",
         isSelected && [
-          theme === "default" &&
-            "bg-white shadow-sm ring-1 ring-black ring-opacity-5",
+          theme === "default" && "shadow-xs bg-white ring-1 ring-black/5",
           theme === "primary" &&
-            "bg-blue-500 text-white shadow-sm ring-1 ring-black ring-opacity-5",
+            "shadow-xs bg-blue-500 text-white ring-1 ring-black/5",
         ]
       )}
     >

@@ -19,7 +19,7 @@ const ColumnHeaderContextMenu: FC<{
     <div className="w-96 px-4 py-4">
       <input
         type="text"
-        className="mb-4 w-full rounded border border-gray-200 p-1"
+        className="mb-4 w-full rounded-sm border border-gray-200 p-1"
         defaultValue={search}
         onChange={(e) => setSearch(e.currentTarget.value)}
       />
@@ -30,7 +30,7 @@ const ColumnHeaderContextMenu: FC<{
             .map((item) => (
               <div
                 key={item.id}
-                className="cursor-pointer rounded p-1 text-xs hover:bg-gray-100"
+                className="cursor-pointer rounded-sm p-1 text-xs hover:bg-gray-100"
                 onClick={() => setSelectedItem(item)}
               >
                 {item.name}

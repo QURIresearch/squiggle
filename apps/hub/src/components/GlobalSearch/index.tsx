@@ -102,7 +102,7 @@ export const GlobalSearch: FC = () => {
       classNames={{
         // copy-pasted and simplified from SelectFormField
         control: () =>
-          "min-w-[16em] max-w-[12em] !min-h-0 h-8 cursor-pointer bg-slate-900  transition-colors border-slate-900 border rounded-md shadow-sm focus-within:ring-indigo-500 focus-within:ring-1",
+          "min-w-[16em] max-w-[12em] !min-h-0 h-8 cursor-pointer bg-slate-900  transition-colors border-slate-900 border rounded-md shadow-xs focus-within:ring-indigo-500 focus-within:ring-1",
         // disable default browser focus style
         input: () => "[&_input:focus]:!ring-transparent text-white",
         placeholder: () => "text-slate-400 text-sm font-light",
@@ -118,9 +118,9 @@ export const GlobalSearch: FC = () => {
         menuList: () => "p-1 overflow-auto",
         option: ({ isDisabled, isFocused }) =>
           clsx(
-            "px-3 py-1.5 rounded text-white",
+            "px-3 py-1.5 rounded-sm text-white",
             isFocused && "bg-blue-100",
-            !isDisabled && "rounded hover:bg-blue-100 hover:text-slate-100"
+            !isDisabled && "rounded-sm hover:bg-blue-100 hover:text-slate-100"
           ),
         loadingMessage: () => "text-slate-500",
         noOptionsMessage: () => "text-slate-400 p-2",

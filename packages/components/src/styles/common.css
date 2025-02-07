@@ -2,7 +2,45 @@
 * These styles should always be imported when you use squiggle-components.
 */
 
+@import "tailwindcss";
 @import "reactflow/dist/style.css";
+
+@plugin "@tailwindcss/typography";
+@plugin "@tailwindcss/forms";
+
+@theme {
+  --animate-appear-and-spin: spin 1s linear infinite,
+    squiggle-appear 0.2s forwards;
+  --animate-semi-appear: squiggle-semi-appear 0.2s forwards;
+  --animate-hide: squiggle-hide 0.2s forwards;
+
+  @keyframes squiggle-appear {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes squiggle-semi-appear {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 0.5;
+    }
+  }
+
+  @keyframes squiggle-hide {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+}
 
 /* Override CodeMirrors default outline. */
 .cm-editor.cm-focused {
@@ -52,7 +90,7 @@
 }
 
 .cm-tooltip-autocomplete .cm-tooltip {
-  @apply bg-white;
+  background-color: white;
 }
 
 .cm-search {
@@ -60,11 +98,11 @@
 }
 
 .cm-search .cm-button {
-  @apply !h-6 !rounded-sm !border !border-slate-300 !bg-slate-100 !bg-none !px-2 !py-0.5 !text-xs !font-medium !text-gray-600 hover:!bg-slate-200 hover:!text-gray-900;
+  @apply !rounded-xs !h-6 !border !border-slate-300 !bg-slate-100 !bg-none !px-2 !py-0.5 !text-xs !font-medium !text-gray-600 hover:!bg-slate-200 hover:!text-gray-900;
 }
 
 .cm-search .cm-textfield {
-  @apply !rounded-sm !border-slate-300 !px-2 !py-1 !text-xs !shadow-sm placeholder:!text-slate-300 focus:!border-indigo-500 focus:!ring-indigo-500 active:!border-indigo-500 active:!ring-indigo-500;
+  @apply !shadow-xs !rounded-xs !border-slate-300 !px-2 !py-1 !text-xs placeholder:!text-slate-300 focus:!border-indigo-500 focus:!ring-indigo-500 active:!border-indigo-500 active:!ring-indigo-500;
 }
 
 .cm-search label {
@@ -72,7 +110,7 @@
 }
 
 .cm-search input[type="checkbox"] {
-  @apply !form-checkbox !mr-1 !h-4 !w-4 !rounded !border-gray-300 !text-indigo-600 focus:!ring-0;
+  @apply !form-checkbox !mr-1 !h-4 !w-4 !rounded-sm !border-gray-300 !text-indigo-600 focus:!ring-0;
 }
 
 .cm-search button[name="close"] {

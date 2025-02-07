@@ -24,7 +24,7 @@ export const Toggle: FC<Props> = ({
     <div onClick={() => onChange(!status)}>
       <div
         className={clsx(
-          "flex cursor-pointer select-none items-center gap-1 whitespace-nowrap rounded-sm px-2 py-2 text-sm text-slate-800 hover:bg-slate-200"
+          "rounded-xs flex cursor-pointer select-none items-center gap-1 whitespace-nowrap px-2 py-2 text-sm text-slate-800 hover:bg-slate-200"
         )}
       >
         <div className="relative" key={String(spinIcon)}>

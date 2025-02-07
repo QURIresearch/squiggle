@@ -25,9 +25,7 @@ export const SquiggleValueResultChart = memo(function ValueResultViewer({
     }
   } else {
     return (
-      <div className="text-sm text-red-800 text-opacity-70">
-        {result.value.toString()}
-      </div>
+      <div className="text-sm text-red-800/70">{result.value.toString()}</div>
     );
   }
 });

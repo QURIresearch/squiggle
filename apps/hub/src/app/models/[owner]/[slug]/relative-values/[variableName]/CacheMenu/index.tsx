@@ -32,7 +32,7 @@ export const CacheMenu: FC<{
   const internals = (
     <div
       className={clsx(
-        "flex items-center rounded-sm px-2 py-1 text-sm text-gray-500",
+        "rounded-xs flex items-center px-2 py-1 text-sm text-gray-500",
         isEditable && "cursor-pointer hover:bg-slate-200"
       )}
     >

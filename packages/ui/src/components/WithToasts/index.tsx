@@ -76,7 +76,7 @@ const Toast: FC<{ toast: ToastShape }> = ({ toast }) => {
       transition={{ duration: 0.15 }}
       className={clsx(
         "flex items-center gap-2",
-        "cursor-pointer rounded border px-8 py-4 text-sm shadow-lg",
+        "cursor-pointer rounded-sm border border-gray-200 px-8 py-4 text-sm shadow-lg",
         toast.type === "error" && "bg-red-50 text-red-900",
         toast.type === "confirmation" && "bg-white text-slate-700"
       )}

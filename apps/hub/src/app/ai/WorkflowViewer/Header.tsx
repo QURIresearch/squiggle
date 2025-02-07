@@ -11,7 +11,7 @@ export const Header: FC<{
   workflow: ClientWorkflow;
 }> = ({ renderLeft, renderRight, workflow }) => {
   return (
-    <div className="flex items-center justify-between rounded bg-gray-100 p-2">
+    <div className="flex items-center justify-between rounded-sm bg-gray-100 p-2">
       <div className="flex items-center gap-3">
         <ArtifactList artifacts={workflow.inputs} />
         {renderLeft()}

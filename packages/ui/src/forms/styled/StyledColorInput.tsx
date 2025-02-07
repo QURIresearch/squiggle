@@ -26,10 +26,10 @@ export function StyledColorInput({ value, onChange }: Props) {
         </DropdownMenu>
       )}
     >
-      <div className="h-10 w-10 rounded border border-slate-200 p-1">
+      <div className="h-10 w-10 rounded-sm border border-slate-200 p-1">
         <div
           style={{ backgroundColor: value }}
-          className="h-full w-full rounded"
+          className="h-full w-full rounded-sm"
         />
       </div>
     </Dropdown>

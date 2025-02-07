@@ -19,7 +19,7 @@ export const Card: CardType = ({
   highlightOnHover = true,
 }) => (
   <div
-    className={`h-full rounded-md bg-white shadow ${
+    className={`h-full rounded-md bg-white shadow-sm ${
       highlightOnHover ? "hover:bg-gray-100" : ""
     } ${large ? "p-5 sm:p-10" : "px-4 py-3"}`}
   >

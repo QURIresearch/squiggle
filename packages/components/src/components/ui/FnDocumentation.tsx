@@ -72,7 +72,7 @@ export const FnDocumentation: FC<{
   const textSize = size === "small" ? "text-xs" : "text-sm";
   const fullName = `${nameSpace ? nameSpace + "." : ""}${name}`;
   const tagCss = clsx(
-    "font-medium py-0.5 rounded",
+    "font-medium py-0.5 rounded-sm",
     textSize,
     size === "small" ? "px-1.5" : "px-2.5"
   );
