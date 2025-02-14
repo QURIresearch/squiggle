@@ -239,7 +239,7 @@ export const Calculator: FC<Props> = ({ settings, valueWithContext }) => {
 
   return (
     <FormProvider {...form}>
-      <div className="mx-auto max-w-4xl rounded-sm border border-slate-200">
+      <div className="rounded-xs mx-auto max-w-4xl border border-slate-200">
         {hasTitleOrDescription && (
           <div className="max-w-4xl border-b border-slate-200 bg-slate-100 px-5 py-3">
             {calculator.title && (

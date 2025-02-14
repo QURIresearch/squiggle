@@ -202,7 +202,7 @@ export function SelectFormField<
                      * But it would require @emotion/cache dependency and also I'm unsure about performance implications.
                      */
                     "!min-h-0",
-                    "bg-white border-slate-300 border rounded-md shadow-sm focus-within:ring-indigo-500 focus-within:border-indigo-500 focus-within:ring-1"
+                    "bg-white border-slate-300 border rounded-md shadow-xs focus-within:ring-indigo-500 focus-within:border-indigo-500 focus-within:ring-1"
                   ),
                 // disable default browser focus style
                 input: () => "[&_input:focus]:!ring-transparent",
@@ -222,7 +222,7 @@ export function SelectFormField<
                   "mt-2 rounded-md bg-white shadow-xl border border-slate-300 overflow-hidden",
                 menuList: () => "p-1 overflow-auto",
                 option: () =>
-                  "px-2 py-1.5 rounded hover:bg-blue-100 text-slate-700 hover:text-slate-900",
+                  "px-2 py-1.5 rounded-sm hover:bg-blue-100 text-slate-700 hover:text-slate-900",
                 loadingMessage: () => "text-slate-500",
                 noOptionsMessage: () => "text-slate-400 p-2",
               }}

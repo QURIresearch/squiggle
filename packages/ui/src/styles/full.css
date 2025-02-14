@@ -3,6 +3,4 @@
 * Generally, you should generate styles for this package with Tailwind instead. See the README file for details.
 */
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";

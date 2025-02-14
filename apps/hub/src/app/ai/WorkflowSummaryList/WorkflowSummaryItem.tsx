@@ -20,7 +20,7 @@ export const WorkflowSummaryItem: FC<{
   return (
     <div
       className={clsx(
-        "w-full border-b p-2 text-sm",
+        "w-full border-b border-gray-200 p-2 text-sm",
         isSelected ? "bg-gray-100" : "cursor-pointer hover:bg-slate-50",
         isLast && "border-b-0"
       )}

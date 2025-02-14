@@ -1,5 +1,4 @@
 import { useState } from "react";
-
 import { CopyToClipboard } from "react-copy-to-clipboard";
 
 import { Button } from "./Button";
@@ -20,7 +19,7 @@ export const CopyParagraph: React.FC<{ text: string; buttonText: string }> = ({
   return (
     <div className="flex flex-col items-stretch">
       <p
-        className="cursor-pointer rounded-md bg-gray-100 px-3 py-2 font-mono text-sm text-gray-700 shadow"
+        className="cursor-pointer rounded-md bg-gray-100 px-3 py-2 font-mono text-sm text-gray-700 shadow-sm"
         onClick={(e) => {
           e.preventDefault();
           navigator.clipboard.writeText(text);

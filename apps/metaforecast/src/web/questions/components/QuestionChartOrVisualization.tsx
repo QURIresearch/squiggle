@@ -9,7 +9,7 @@ export const QuestionChartOrVisualization: React.FC<Props> = ({ question }) =>
   question.platform.id === "guesstimate" && question.visualization ? (
     <a className="no-underline" href={question.url} target="_blank">
       <img
-        className="rounded-sm"
+        className="rounded-xs"
         src={question.visualization}
         alt="Guesstimate Screenshot"
       />

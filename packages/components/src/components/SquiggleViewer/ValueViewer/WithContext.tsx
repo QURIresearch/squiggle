@@ -185,7 +185,7 @@ export const ValueWithContextViewer: FC<Props> = ({
             }}
             tabIndex={viewerType === "tooltip" ? undefined : 0}
             className={clsx(
-              "group flex justify-between rounded-sm pr-0.5 hover:bg-stone-100 focus-visible:outline-none",
+              "rounded-xs focus-visible:outline-hidden group flex justify-between pr-0.5 hover:bg-stone-100",
               isZoomedIn
                 ? "mb-2 px-0.5 py-1 focus:bg-indigo-50"
                 : "focus:bg-indigo-100"

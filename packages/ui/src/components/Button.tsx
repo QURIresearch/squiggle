@@ -35,7 +35,7 @@ export const Button: FC<ButtonProps> = ({
   return (
     <button
       className={clsx(
-        "border text-sm font-medium",
+        "cursor-pointer border text-sm font-medium disabled:cursor-default",
         theme === "primary" && "border-green-900 bg-green-700 text-white",
         theme === "default" && "border-slate-300 bg-slate-100 text-gray-600",
         theme === "alert" && "border-red-600 bg-red-500 text-white",
@@ -51,7 +51,7 @@ export const Button: FC<ButtonProps> = ({
 
         wide && "w-full",
         size === "medium" && "h-8 rounded-md",
-        size === "small" && "h-6 rounded-sm",
+        size === "small" && "rounded-xs h-6",
         // This could probably be simplified, but I'm not sure how.
         // Tailwind group-* styles don't allow styling based on parent, only on parent state.
         "[.button-group_&:not(:first-child)]:rounded-l-none",

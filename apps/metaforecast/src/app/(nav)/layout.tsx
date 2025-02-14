@@ -1,6 +1,5 @@
-import React, { FC, PropsWithChildren } from "react";
-
 import Link from "next/link";
+import React, { FC, PropsWithChildren } from "react";
 
 import { ErrorBoundary } from "../../web/common/ErrorBoundary";
 import { Logo2 } from "../../web/icons";
@@ -13,7 +12,7 @@ const Layout: FC<PropsWithChildren> = ({ children }) => {
   return (
     <div>
       <div>
-        <nav className="bg-white shadow">
+        <nav className="bg-white shadow-sm">
           <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="flex items-center justify-between">
               <div className="flex gap-8">

@@ -58,7 +58,7 @@ export const GroupReusableInviteSection: FC<Props> = ({
           <TextTooltip text="Click to copy">
             <div
               onClick={copy}
-              className="group flex cursor-pointer items-center gap-1 rounded bg-white p-2 shadow hover:bg-slate-200"
+              className="group flex cursor-pointer items-center gap-1 rounded-sm bg-white p-2 shadow-sm hover:bg-slate-200"
             >
               <ClipboardCopyIcon
                 size={24}

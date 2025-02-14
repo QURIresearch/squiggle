@@ -86,7 +86,7 @@ export const SearchForm: FC<Props> = ({ platformsConfig }) => {
 
       {advancedOptions && (
         <div className="mx-auto w-full flex-1 flex-col items-center justify-center">
-          <div className="mb-4 grid grid-cols-1 content-center items-center rounded-md bg-gray-50 px-8 pb-1 pt-4 shadow sm:grid-cols-1 sm:grid-rows-4 md:grid-cols-3 md:grid-rows-2 lg:grid-cols-3 lg:grid-rows-2">
+          <div className="mb-4 grid grid-cols-1 content-center items-center rounded-md bg-gray-50 px-8 pb-1 pt-4 shadow-sm sm:grid-cols-1 sm:grid-rows-4 md:grid-cols-3 md:grid-rows-2 lg:grid-cols-3 lg:grid-rows-2">
             <div className="col-start-1 col-end-4 row-start-1 row-end-1 mb-4 flex items-center justify-center md:col-start-1 md:col-end-1 md:row-span-1 md:row-start-1 md:row-end-1 lg:col-start-1 lg:col-end-1 lg:row-span-1 lg:row-start-1 lg:row-end-1">
               <SliderElement
                 onChange={onChangeSliderForNumForecasts}
@@ -108,7 +108,7 @@ export const SearchForm: FC<Props> = ({ platformsConfig }) => {
               />
             </div>
             <button
-              className="col-start-1 col-end-4 mb-2 ml-10 mr-10 mt-5 block items-center justify-center rounded border border-blue-500 bg-transparent p-10 px-4 py-2 text-center text-blue-400 hover:border-transparent hover:bg-blue-300 hover:text-white md:col-start-2 md:col-end-3 md:row-start-4 md:row-end-4 lg:col-start-2 lg:col-end-3 lg:row-start-4 lg:row-end-4"
+              className="col-start-1 col-end-4 mb-2 ml-10 mr-10 mt-5 block items-center justify-center rounded-sm border border-blue-500 bg-transparent p-10 px-4 py-2 text-center text-blue-400 hover:border-transparent hover:bg-blue-300 hover:text-white md:col-start-2 md:col-end-3 md:row-start-4 md:row-end-4 lg:col-start-2 lg:col-end-3 lg:row-start-4 lg:row-end-4"
               onClick={onChangeShowId}
             >
               Toggle show id

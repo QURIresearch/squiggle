@@ -6,7 +6,7 @@ export function getInputClassName(
   inputWidth: `w-${number}` | "w-full" = "w-full"
 ) {
   return clsx(
-    "form-input block rounded-md border-slate-300 text-sm shadow-sm placeholder:text-slate-300 focus:border-indigo-500 focus:ring-indigo-500 active:border-indigo-500 active:ring-indigo-500 disabled:text-slate-400",
+    "form-input block rounded-md border-slate-300 text-sm shadow-xs placeholder:text-slate-300 focus:border-indigo-500 focus:ring-indigo-500 active:border-indigo-500 active:ring-indigo-500 disabled:text-slate-400",
     size === "normal" ? "h-10" : "h-8",
     inputWidth
   );

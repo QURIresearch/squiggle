@@ -126,7 +126,7 @@ const ModalWindow: FC<
   return (
     <div
       className={clsx(
-        "shadow-toast flex flex-col overflow-auto rounded-md border bg-white",
+        "flex flex-col overflow-auto rounded-md border border-gray-200 bg-white",
         position && "fixed"
       )}
       style={{

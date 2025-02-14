@@ -55,13 +55,13 @@ function numberToColor2(
     case 1:
       return "hover:bg-gray-100";
     case 2:
-      return "bg-yellow-300 bg-opacity-5 hover:bg-opacity-30";
+      return "bg-yellow-300/5 hover:bg-yellow-300/30";
     case 3:
-      return "bg-yellow-500 bg-opacity-10  hover:bg-opacity-30";
+      return "bg-yellow-500/10 hover:bg-yellow-500/30";
     case 4:
-      return "bg-red-400 bg-opacity-10 hover:bg-opacity-30";
+      return "bg-red-400/10 hover:bg-red-400/30";
     case 5:
-      return "bg-red-400 bg-opacity-20 hover:bg-opacity-40";
+      return "bg-red-400/20 hover:bg-red-400/40";
   }
 }
 
@@ -77,7 +77,7 @@ export const RelativeValueCell: FC<{
   showMedian,
 }) {
   return hasInvalid(item) ? (
-    <div className="relative h-full min-h-[2em] bg-gray-300 bg-opacity-30 pt-[1px]">
+    <div className="relative h-full min-h-[2em] bg-gray-300/30 pt-[1px]">
       <div className="z-0 p-4 text-center text-gray-500">Error</div>
     </div>
   ) : (

@@ -120,7 +120,7 @@ class FocusableMarker extends GutterMarker {
             "bg-violet-50 [.cm-activeLineGutter_&]:bg-white",
             // highlight all markers on gutter hover; highlight the hovered markers even more
             "group-hover/gutter:bg-violet-200 group-hover/marker:!bg-violet-400",
-            "br-1 mt-[1px] h-4 w-[3px] rounded-sm",
+            "br-1 rounded-xs mt-[1px] h-4 w-[3px]",
             "transition duration-75"
           )}
         />

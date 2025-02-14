@@ -30,7 +30,7 @@ export const DropdownMenuItemLayout: FC<ItemLayoutProps> = ({
   acting,
 }) => {
   return (
-    <div className="group m-1 flex cursor-pointer items-center gap-2 rounded px-2 py-1.5 transition-colors duration-75 hover:bg-blue-100">
+    <div className="group m-1 flex cursor-pointer items-center gap-2 rounded-sm px-2 py-1.5 transition-colors duration-75 hover:bg-blue-100">
       {iconDisplay(icon, acting)}
       <div className="flex-1 text-sm font-medium text-slate-700 group-hover:text-slate-900">
         {title}

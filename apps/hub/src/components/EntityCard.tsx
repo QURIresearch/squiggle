@@ -95,7 +95,7 @@ export const EntityCard: FC<Props> = ({
   menuItems,
 }) => {
   return (
-    <div className="rounded border border-gray-200 py-2 hover:bg-gray-50">
+    <div className="rounded-sm border border-gray-200 py-2 hover:bg-gray-50">
       <div className="flex h-full flex-col">
         <div className="mb-1 px-5">
           <Link

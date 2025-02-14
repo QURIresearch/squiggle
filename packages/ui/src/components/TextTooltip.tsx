@@ -61,7 +61,8 @@ export const TextTooltip: FC<Props> = ({
               transition={{ duration: 0.07 }}
               {...getFloatingProps({
                 ref: refs.setFloating,
-                className: "text-sm px-2 py-1 rounded bg-gray-800 z-10 min-w-4",
+                className:
+                  "text-sm px-2 py-1 rounded-sm bg-gray-800 z-10 min-w-4",
                 style: {
                   position: strategy,
                   top: y ?? 0,

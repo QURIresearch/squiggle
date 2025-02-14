@@ -126,14 +126,14 @@ export const ItemSideBar: FC<Props> = ({
         <div className="mb-6 mt-2 flex items-center overflow-x-auto p-1">
           <span className="mr-1 whitespace-nowrap text-slate-500">value</span>
           <span className="whitespace-nowrap text-xl text-slate-300">(</span>
-          <span className="ml-2 mr-2 whitespace-pre-wrap rounded-sm bg-slate-200 bg-opacity-80 px-1 text-center text-sm font-semibold text-slate-900">
+          <span className="rounded-xs ml-2 mr-2 whitespace-pre-wrap bg-slate-200/80 px-1 text-center text-sm font-semibold text-slate-900">
             {numeratorItem.name}
           </span>
           <span className="whitespace-nowrap px-1 text-xl text-slate-300">
             /
           </span>
 
-          <span className="ml-2 mr-2 whitespace-pre-wrap rounded-sm bg-slate-200 px-1 text-center text-sm font-semibold text-slate-900">
+          <span className="rounded-xs ml-2 mr-2 whitespace-pre-wrap bg-slate-200 px-1 text-center text-sm font-semibold text-slate-900">
             <span className="inline-block">{denominatorItem.name}</span>
           </span>
           <span className="whitespace-nowrap text-xl text-slate-300">)</span>

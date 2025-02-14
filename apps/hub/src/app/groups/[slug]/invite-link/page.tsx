@@ -42,7 +42,7 @@ async function InnerPage({ params, searchParams }: Props) {
   if (!isValidToken) {
     // FIXME - copy-pasted from ErrorBoudnary
     return (
-      <div className="mx-auto mt-4 max-w-2xl rounded bg-red-400 p-4">
+      <div className="mx-auto mt-4 max-w-2xl rounded-sm bg-red-400 p-4">
         <header className="mb-2 font-bold">Error</header>
         <div className="mb-2">Invalid invite token.</div>
       </div>

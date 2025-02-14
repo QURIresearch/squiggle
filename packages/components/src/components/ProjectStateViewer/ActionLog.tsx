@@ -47,7 +47,7 @@ export const ActionLog: FC<{ project: SqProject }> = ({ project }) => {
             <div className="cursor-pointer px-1 hover:bg-slate-100">
               <Tooltip
                 render={() => (
-                  <div className="max-w-64 whitespace-pre-wrap break-all rounded border bg-white px-2 py-1 text-xs shadow-md">
+                  <div className="max-w-64 whitespace-pre-wrap break-all rounded-sm border border-gray-200 bg-white px-2 py-1 text-xs shadow-md">
                     {JSON.stringify(action, null, 2)}
                   </div>
                 )}

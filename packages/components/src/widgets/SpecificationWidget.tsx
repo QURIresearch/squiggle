@@ -48,7 +48,7 @@ const SpecificationDropdownContent: FC<{
         <div className="mb-2 mt-5">
           <div
             className={clsx(
-              "inline-flex items-center space-x-2 rounded-sm px-2 py-0.5 text-sm font-medium",
+              "rounded-xs inline-flex items-center space-x-2 px-2 py-0.5 text-sm font-medium",
               hasError
                 ? "bg-red-100 text-red-900"
                 : "bg-green-100 text-green-900"
@@ -126,7 +126,7 @@ const SpecificationStatusPreview: FC<{
   return (
     <div
       className={clsx(
-        "flex cursor-pointer flex-row items-center space-x-1.5 rounded-sm px-0.5 transition",
+        "rounded-xs flex cursor-pointer flex-row items-center space-x-1.5 px-0.5 transition",
         hasError
           ? "bg-red-100 hover:bg-red-300"
           : "bg-green-100 hover:bg-green-300"
