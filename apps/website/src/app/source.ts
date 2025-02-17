@@ -29,7 +29,7 @@ const mdxSource = createMDXSource(
       doc._meta.directory === "."
         ? {
             ...doc,
-            pages: injectStringAfter(doc.pages ?? [], "Ecosystem", "Api"),
+            pages: injectStringAfter(doc.pages ?? [], "Guides", "Api"),
           }
         : doc
     ),

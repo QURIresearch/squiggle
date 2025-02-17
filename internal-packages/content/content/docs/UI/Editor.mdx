@@ -1,0 +1,26 @@
+---
+title: Squiggle Editor
+---
+
+Similar to [Squiggle Playground](./Playground), Squiggle Editor combines the code editor and the real-time viewer of Squiggle outputs. Unlike Squiggle Playground, it uses a vertical layout and has slightly less features.
+
+Most of this documentation uses it instead of the playground, because the vertical layout is more convenient for reading.
+
+<SquiggleEditor
+  defaultCode={`2 to 5`}
+/>
+
+## Internals
+
+### Usage in React
+
+The editor component is implemented with React.
+
+```tsx
+import { SquiggleEditor } from "@quri/squiggle-components";
+
+<SquiggleEditor />
+```
+
+You can find more examples in our [storybook](https://components.squiggle-language.com/?path=/docs/squiggle-squiggleeditor--docs).
+
