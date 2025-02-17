@@ -6,7 +6,7 @@
 
 import { nrd0 } from "./bandwidth.js";
 
-export type kdeParams = {
+export type KdeParams = {
   samples: number[];
   outputLength: number;
   weight: number;
@@ -19,7 +19,7 @@ export const kde = ({
   outputLength,
   weight,
   kernelWidth,
-}: kdeParams) => {
+}: KdeParams) => {
   let xWidth = kernelWidth ?? nrd0(samples);
   samples = samples.filter((v) => Number.isFinite(v)); // Not sure if this is needed?
   const len = samples.length;
