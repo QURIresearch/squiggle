@@ -17,6 +17,7 @@ import { FnDocumentationFromName } from "@quri/squiggle-components";
 import { source } from "@/app/source";
 
 import { DemoProjectStateViewer } from "../../../components/DemoProjectStateViewer";
+import { DocsSquigglePlayground } from "../../../components/DocsSquigglePlayground";
 import { SquiggleEditor } from "../../../components/SquiggleEditor";
 
 function docsPathToGitHub(path: string) {
@@ -76,6 +77,7 @@ export default async function Page({
             ),
             FnDocumentationFromName,
             SquiggleEditor,
+            SquigglePlayground: DocsSquigglePlayground,
             DemoProjectStateViewer,
             Tabs,
             Tab,

@@ -12,6 +12,7 @@ export const mdxOptions: TransformOptions = {
     langs: [
       "javascript",
       "typescript",
+      "tsx",
       {
         name: "squiggle",
         ...squiggleGrammar,

@@ -1,0 +1,47 @@
+---
+title: Squiggle Playground
+description: Squiggle Playground is the most feature-complete browser-based interface for Squiggle.
+---
+
+We host the fullscreen playground at https://squiggle-language.com/playground.
+
+<SquigglePlayground height={300} defaultCode="2 to 5" />
+
+## Features
+
+- Full-featured editor with syntax highlighting, error reporting, and more.
+- Visualizations of distributions and other values.
+- Ability to enable and disable autoruns.
+- Configuration panel for changing Squiggle settings and customizing the UI.
+
+## Internals
+
+### Customizability
+
+You may notice that the [documentation website playground](/playground) is different from the playground used on [Squiggle Hub](/docs/Ecosystem/Hub):
+- documentation playground has "Share link" button
+- hub playground has "Save" button (if you're logged in and can edit the model)
+
+`<SquigglePlayground />` component provides a way to inject menu items and buttons into the playground.
+
+The [Squiggle linker](/docs/Internal/SqProject#linkers) is also configured differently: documentation playground uses the default linker, which doesn't support imports, while Hub playground supports imports with `hub:username/modelname` syntax.
+
+### Version picker
+
+The playground has a version picker in the top-right corner.
+
+This feature is not built-in; the playground itself doesn't know anything about Squiggle versions, and is only compatible with a single version of Squiggle.
+
+The version picker is implemented with a custom wrapper to the playground, which lazily loads the necessary version of the playground. This is done through the [versioned-components](https://github.com/quantified-uncertainty/squiggle/tree/main/internal-packages/versioned-components) package, which depends on **all** versions of Squiggle simultaneously. This `versioned-components` package is not released as a separate npm package yet, but is available in the Squiggle monorepo.
+
+### Usage in React
+
+The playground component is implemented with React.
+
+```tsx
+import { SquigglePlayground } from "@quri/squiggle-components";
+
+<SquigglePlayground />
+```
+
+You can find more examples in our [storybook](https://components.squiggle-language.com/?path=/docs/squiggle-squiggleplayground--docs).
